@@ -17,17 +17,17 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-public class RootController {
+class RootController {
 
     private final InfoService info;
 
     @Autowired
-    public RootController(final InfoService info) {
+    RootController(final InfoService info) {
         this.info = info;
     }
 
     @RequestMapping(value = "/version", method = RequestMethod.GET)
-    public Version health() {
+    Version health() {
         return info.version();
     }
 

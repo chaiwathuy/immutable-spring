@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 @Slf4j
 @WebFilter("/*")
-public class ResponseHeaderFilter implements Filter {
+class ResponseHeaderFilter implements Filter {
 
     @Override
     public void doFilter(final ServletRequest request
