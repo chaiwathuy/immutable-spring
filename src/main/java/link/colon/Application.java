@@ -2,7 +2,9 @@
  *  © Copyright 2019, Colon.Link
  */
 
-package link.colon;import org.springframework.boot.SpringApplication;
+package link.colon;
+
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
