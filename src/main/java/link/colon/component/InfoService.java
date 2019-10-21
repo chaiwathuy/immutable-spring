@@ -4,13 +4,13 @@
 
 package link.colon.component;
 
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.ConstructorBinding;
 
-/** @author Peerapat A */
-@Getter
+/**
+ * @author Peerapat A
+ **/
 @ConstructorBinding
 @RequiredArgsConstructor
 @ConfigurationProperties("build")

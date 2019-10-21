@@ -12,7 +12,9 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/** @author Peerapat A */
+/**
+ * @author Peerapat A
+ **/
 @Slf4j
 @WebFilter("/*")
 class ResponseHeaderFilter implements Filter {
