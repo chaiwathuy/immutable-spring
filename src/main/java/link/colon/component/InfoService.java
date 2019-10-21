@@ -4,28 +4,22 @@
 
 package link.colon.component;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.ConstructorBinding;
 
-/**
- * @author Peerapat A
- */
-@Service
+/** @author Peerapat A */
+@Getter
+@ConstructorBinding
+@RequiredArgsConstructor
+@ConfigurationProperties("build")
 public class InfoService {
 
-    private final String version;
-    private final String buildDate;
+  private final String version;
+  private final String date;
 
-    @Autowired
-    InfoService(@Value("${version}") final String version
-            , @Value("${build.date}") final String buildDate) {
-        this.version = version;
-        this.buildDate = buildDate;
-    }
-
-    public Version version() {
-        return new Version(version, buildDate);
-    }
-
+  public Version version() {
+    return new Version(version, date);
+  }
 }
