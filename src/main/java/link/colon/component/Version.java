@@ -4,17 +4,14 @@
 
 package link.colon.component;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
+import lombok.RequiredArgsConstructor;
 
-/**
- * @author Peerapat A
- */
+/** @author Peerapat A */
 @EqualsAndHashCode
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class Version {
 
-    public final String version;
-    public final String buildDate;
-
+  public final String version;
+  public final String buildDate;
 }
