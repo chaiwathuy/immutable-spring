@@ -2,7 +2,7 @@
  *  © Copyright 2019, Colon.Link
  */
 
-package link.colon.component;
+package link.colon.component.info;
 
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;

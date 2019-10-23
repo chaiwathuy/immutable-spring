@@ -4,7 +4,7 @@
 
 package link.colon.controller;
 
-import link.colon.component.Version;
+import link.colon.component.info.Version;
 import link.colon.utility.JConverter;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
